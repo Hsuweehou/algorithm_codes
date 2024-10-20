@@ -1,0 +1,28 @@
+#ifndef SINGLEPATTERN_
+#define SINGLEPATTERN_
+
+#include <iostream>
+//饿汉模式
+class singlePattern{
+
+private:
+    singlePattern(){
+        
+    };//构造
+    static singlePattern* p;//实例
+
+public:
+    static singlePattern* instance();
+
+    class CG{
+        public:
+            ~CG(){
+                if(singlePattern::p != nullptr){
+                    delete singlePattern::p;
+                    singlePattern::P = nullptr;
+                }
+            }
+        };
+}
+
+#endif
