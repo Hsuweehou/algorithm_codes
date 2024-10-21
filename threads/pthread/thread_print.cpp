@@ -51,7 +51,7 @@ void printC(){
     std::cout << "thread 3 finish " << std::endl;
 } 
 
-int main(){
+int main(){                                                         
     std::thread thr0(printA);
     std::thread thr1(printB);
     std::thread thr2(printC);
