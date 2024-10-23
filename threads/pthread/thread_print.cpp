@@ -59,5 +59,12 @@ int main(){
     thr1.join();
     thr2.join();
     std::cout << "main thread" << std::endl;
+    std::cout << "enter a num to end:";
+    int a;
+    while (std::cin >> a)
+    {
+        std::cout << a << "finish!" << std::endl;
+        break;
+    }
     return 0;
  }
