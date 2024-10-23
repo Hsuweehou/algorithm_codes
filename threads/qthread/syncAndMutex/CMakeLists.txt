@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 SET(CMAKE_PREFIX_PATH "/usr/lib/x86_64-linux-gnu/cmake")
 
-project(qthread)
+project(syncAndMutex)
 
 set(CMAKE_BUILD_TYPE debug)
 set(CMAKE_CXX_STANDARD 11)
@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-
+set(CMAKE_AUTOMOC ON)##get "unreference to vtable" error if missing out this line
 ########         !!!!!!!         ########
 ########double click mouse to run########
 set(CMAKE_CXX_FLAGS   "-no-pie")

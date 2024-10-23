@@ -2,8 +2,6 @@
 #include <QDebug>
 #include "miniWorker.h"
  
-using namespace std;
- 
 int main()
 {   Worker *miniWorker = nullptr;
     miniWorker = new Worker();
@@ -15,7 +13,7 @@ int main()
     miniWorker->printFunc();
     std::cout << "enter a num to end:";
     int a;
-    while (cin >> a)
+    while (std::cin >> a)
     {
         std::cout << a << "finish!" << std::endl;
         break;
