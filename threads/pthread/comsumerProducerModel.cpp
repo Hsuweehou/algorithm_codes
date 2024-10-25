@@ -31,6 +31,7 @@ void consumer(int id) {
         lck.unlock();
     }
 }
+
 //g++ -o cameratest camera_device.cpp -ludev
 int main() {
     std::thread producers[2];
